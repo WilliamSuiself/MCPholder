@@ -17,6 +17,8 @@
 
 ## 快速开始
 
+1、请修改lib/config目录下的openRouterApiKey，当前程序只支持openrouter的claude sonnet 3.7
+2、由于网络环境问题，我只能上传flutter的lib库，因此以下安装方式不一定可用：
 1. 确保已安装Flutter环境
 2. 克隆此仓库
 3. 运行以下命令安装依赖：
@@ -50,7 +52,7 @@ Model Context Protocol (MCP) 是一种协议，允许AI模型通过外部工具�
 
 ## 安装
 
-请修改lib/config目录下的openRouterApiKey，当前程序只支持openrouter的claude sonnet 3.7
+
 
 ## 演示
 
