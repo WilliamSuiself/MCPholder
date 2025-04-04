@@ -52,7 +52,7 @@ Model Context Protocol (MCP) 是一种协议，允许AI模型通过外部工具�
 
 ## 演示
 
-https://youtube.com/shorts/a98GrxVYsuY
+https://youtube.com/shorts/npAoVR9HOHM?feature=share
 
 在测试服务页面，我们先:
 填入服务名称：add，
