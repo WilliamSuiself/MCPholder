@@ -50,11 +50,9 @@ Model Context Protocol (MCP) 是一种协议，允许AI模型通过外部工具�
 
 更多关于MCP协议的信息，请访问 [Cloudflare的MCP文档](https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/)。
 
-## 安装
-
-
-
 ## 演示
+
+https://youtube.com/shorts/a98GrxVYsuY
 
 在测试服务页面，我们先:
 填入服务名称：add，
