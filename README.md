@@ -1,6 +1,6 @@
 # MCP客户端应用
 
-这是一个基于Flutter的MCP（Model Context Protocol）客户端应用原型，用于演示AI模型如何通过外部工具和API执行操作。
+这是一个为AI大模型服务的MCP（model context protocol）客户端程序-MCPHOLDER，在手机上也能实现类似于claude desktop的功能。它可以将cloudflare上的云端服务汇集到一起，为AI大模型提供外部的支持。
 
 ## 功能
 
@@ -48,6 +48,24 @@ Model Context Protocol (MCP) 是一种协议，允许AI模型通过外部工具�
 
 更多关于MCP协议的信息，请访问 [Cloudflare的MCP文档](https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/)。
 
+## 安装
+
+请修改lib/config目录下的openRouterApiKey，当前程序只支持openrouter的claude sonnet 3.7
+
 ## 演示
 
-该应用是一个MVP（最小可行产品），可以尝试连接 https://remote-mcp.yunhaisui.workers.dev/sse 进行测试。 
+在测试服务页面，我们先:
+填入服务名称：add，
+再填入cloudflare的服务URL：https://remote-mcp.yunhaisui.workers.dev/sse
+端口不用填写
+API秘钥随便输入，但不能为空
+
+下面点击注册客户端获取ID
+成功后点击测试连接
+然后会弹出一个认证的OAUTH授权按钮，点击启动oauth授权
+在新弹出的webview页面点击approve
+然后App会自动识别MCP中有几个tools
+
+这时点击MCP服务，就可以看到新增了一个加法工具
+
+在AI对话页面中输入一个简单的加法问题，claude sonnet会自动调用mcp服务，我使用的是openrouter服务，似乎有点慢，但最终也能得到正确的结果。下周我再到cloudflare上做几个好玩的MCP服务测试一下。
